@@ -1,2 +1,2 @@
 # beepds
-an employee recognition app that draws customers to a company website
+a recognition app that draws others in to recognize a person or a group
