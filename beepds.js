@@ -1,17 +1,26 @@
-﻿var clicks = 0;
+﻿/* code content section (CCS)
+program beepds
+set milestone
+configure recognition
+implement alert
+program audio interaction
+planned features
+*/
+
+var beepds = 0; // create beepds 
 var milestone = 25;
 function clickME() {
-    if (clicks < milestone) {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
-    } else if (clicks === milestone) {
-        document.getElementById("beepd-stars").innerHTML = "&#x2665;";
+    if (beepds < milestone) {
+        beepds += 1;
+        document.getElementById("beepds").innerHTML = beepds;
+    } else if (beepds === milestone) {
+        document.getElementById("beepds-reward").innerHTML = "&#x2665;";
         alert("You reached " + milestone + " beepds");
-        clicks = milestone + 1;
+        beepds = milestone + 1;
         milestone = milestone * 2;
-    } else if (clicks > milestone) {
-        clicks += 1;
-        document.getElementById("clicks").innerHTML = clicks;
+    } else if (beepds > milestone) {
+        beepds += 1;
+        document.getElementById("beepds").innerHTML = beepds;
     }
 }
 
@@ -47,7 +56,8 @@ function createsoundbite(sound) {
 
 //Initialize two sound clips with 1 fallback file each:
 
-var clicksound = createsoundbite("first.mp3");
+var beepdssound = createsoundbite("first.mp3");
+*/
 
 /*
 function playBeepds(a, b, c, d, e){
@@ -66,6 +76,6 @@ fourth
 fifth
 
 once a case (if comparison) is satisfied, it will break out of the if structure loop
-beepeeb.com
+beepds.com
 
 */

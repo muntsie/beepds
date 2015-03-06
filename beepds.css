@@ -1,33 +1,41 @@
-﻿#beepd-stars{
+/* code content section (CCS)
+reward
+from
+beepds
+button
+to
+*/
+
+#beepds-reward{
     background:#ffffff;
     text-align:center;
     width:200px;
 }
-#beepd-from{
+#beepds-from{
     background:#000000;
     color:#ffffff;
     padding-left:5px;
     text-align:left;
     width:200px;
 }
-#beepd{
+#beepds{
     background:#000000;
     padding:5px 2.5px;
     text-align:center;
     width:200px;
 }
-#beepd-button{
+#beepds-button{
     background:#ffffff;
     color:#000000;
     font-size:2.5em;
     text-decoration:none;
     width:200px;
 }
-#beepd-to{
+#beepds-to{
     background:#000000;
     color:#ffffff;
     padding-right:5px;
     text-align:right;
     width:200px;
 }
-/* beepedme.com */
+/* beepds.com */
