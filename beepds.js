@@ -7,22 +7,28 @@ program audio interaction
 planned features
 */
 
-var beepds = 0; // create beepds 
+// create variables to hold beepds and milestone
+var beepds = 0;
 var milestone = 25;
+var reward = "&#x2665;";
+milestone_count = 2;
+// create method to respond to various happenings
+function theReward() {
+    if (milestone_count = 2){
+        reward = "&#x2665;" + "&#x2665;";
+    };
 function clickME() {
-    if (beepds < milestone) {
-        beepds += 1;
-        document.getElementById("beepds").innerHTML = beepds;
-    } else if (beepds === milestone) {
-        document.getElementById("beepds-reward").innerHTML = "&#x2665;";
-        alert("You reached " + milestone + " beepds");
-        beepds = milestone + 1;
-        milestone = milestone * 2;
-    } else if (beepds > milestone) {
-        beepds += 1;
-        document.getElementById("beepds").innerHTML = beepds;
+    if (beepds < milestone) { // if total beepds is less than milestone
+        beepds += 1; // then increment beepds
+        document.getElementById("beepds-counter").innerHTML = beepds; // and print the total number of beepds to the view
+    } else (beepds === milestone) { // if the total beepds is equal to the milestone
+        document.getElementById("beepds-reward").innerHTML = "&#x2665;"; // print a symbol to the reward area
+        alert("You reached " + beepds + "beepds!"); // and throw an alert that says you reached the milestone!
+        beepds = milestone + 1; // at this point, set total beepds to the milestone plus one
+        milestone = milestone * 2; // and, set the milestone to the milestone * 2
+        milestone_count += milestone_count;
     }
-}
+};
 
 var html5_audiotypes = { //define list of audio file extensions and their associated audio types. Add to it if your specified audio file isn't on this list:
     "mp3": "audio/mpeg",
@@ -32,7 +38,7 @@ var html5_audiotypes = { //define list of audio file extensions and their associ
 };
 
 function createsoundbite(sound) {
-    var html5audio = document.createElement('audio');
+    var html5audio = document.createElement('beepds');
     if (html5audio.canPlayType) { //check support for HTML5 audio
         for (var i = 0; i < arguments.length; i++) {
             var sourceel = document.createElement('source');
@@ -57,7 +63,6 @@ function createsoundbite(sound) {
 //Initialize two sound clips with 1 fallback file each:
 
 var beepdssound = createsoundbite("first.mp3");
-*/
 
 /*
 function playBeepds(a, b, c, d, e){
@@ -76,6 +81,6 @@ fourth
 fifth
 
 once a case (if comparison) is satisfied, it will break out of the if structure loop
-beepds.com
+beepeeb.com
 
 */
